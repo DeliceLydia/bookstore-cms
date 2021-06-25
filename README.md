@@ -3,7 +3,7 @@ This is a fast, dynamic and responsive application which is about organizing and
 
 ## Live Demo
 
-Check the application live [Here](https://lydia-calculator-app.netlify.app/)
+Check the application live [Here](https://bookstore-cms-app.netlify.app/)
 
 ## Available Commands
 
