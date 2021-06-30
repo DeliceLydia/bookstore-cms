@@ -1,8 +1,9 @@
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import connect from 'react-redux';
-import PropTypes from 'prop-types';
+import Book from '../Components/Book';
 
-const BooksList = () => (
+const BooksList = (books) => (
   <table>
     <thead>
       <tr>
@@ -11,7 +12,26 @@ const BooksList = () => (
         <th>Category</th>
       </tr>
     </thead>
+    <tbody>
+      {
+          books && books.length
+            ? books.map((val) => (
+              <Book key={val.id} book={val} />
+            ))
+            : (
+              <tr>
+                <td>No books!</td>
+              </tr>
+            )
+      }
+
+    </tbody>
   </table>
 );
 
-export default BooksList;
+const mapStateToProps = (state) => {
+  const { books } = state;
+  return { books };
+};
+
+export default connect(mapStateToProps, null)(BooksList);
