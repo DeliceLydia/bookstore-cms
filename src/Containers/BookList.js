@@ -1,6 +1,5 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/destructuring-assignment */
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Book from '../Components/Book';
 import { removeBook } from '../Actions/index';
@@ -29,8 +28,7 @@ const BooksList = ({ books, removeBook }) => {
                 <td>No books!</td>
               </tr>
             )
-      }
-
+        }
       </tbody>
     </table>
   );
@@ -48,3 +46,12 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(BooksList);
+
+BooksList.propTypes = {
+  books: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+  })).isRequired,
+  removeBook: PropTypes.func.isRequired,
+};
