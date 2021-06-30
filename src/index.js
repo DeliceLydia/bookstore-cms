@@ -16,7 +16,12 @@ const state = {
     {
       id: Math.random(),
       title: 'Eloquent-javascript',
-      category: 'lerning',
+      category: 'learning',
+    },
+    {
+      id: Math.random(),
+      title: 'Bible',
+      category: 'Praying',
     },
   ],
 };

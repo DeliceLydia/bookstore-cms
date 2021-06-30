@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Book = (book) => (
+const Book = ({ book }) => (
   <tr id={book.id}>
     <td>
       { book.id }
