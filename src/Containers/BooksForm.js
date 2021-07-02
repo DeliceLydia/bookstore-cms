@@ -20,6 +20,12 @@ const BooksForm = (props) => {
     });
   };
 
+  const clearState = () => {
+    setBook({
+      ...initialState,
+    });
+  };
+
   return (
     <form>
       <input type="text" id="title" />
