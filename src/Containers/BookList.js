@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Book from '../Components/Book';
@@ -15,6 +14,7 @@ const BooksList = ({ books, removeBook }) => {
           <th>ID</th>
           <th>Title</th>
           <th>Category</th>
+          <th>Action</th>
         </tr>
       </thead>
       <tbody>
