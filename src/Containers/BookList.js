@@ -49,8 +49,8 @@ const BooksList = ({
 };
 
 const mapStateToProps = (state) => {
-  const { books } = state;
-  return { books };
+  const { books, filter } = state;
+  return { books, filter };
 };
 
 const mapDispatchToProps = (dispatch) => ({
