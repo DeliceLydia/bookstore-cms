@@ -24,6 +24,7 @@ const state = {
       category: 'Praying',
     },
   ],
+  filter: 'All',
 };
 
 const store = createStore(combineReducers, state);
