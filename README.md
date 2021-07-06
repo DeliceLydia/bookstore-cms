@@ -45,10 +45,6 @@ Check the application live [Here](https://bookstore-cms-app.netlify.app/)
 - React
 - Netlify
 
-## Tested with
-
-- Jest
-
 ## Author
 
 👤 **Delice Lydia**
