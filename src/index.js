@@ -11,17 +11,17 @@ const state = {
     {
       id: Math.random(),
       title: 'Americanah',
-      category: 'story',
+      category: 'History',
     },
     {
       id: Math.random(),
       title: 'Eloquent-javascript',
-      category: 'learning',
+      category: 'Learning',
     },
     {
       id: Math.random(),
-      title: 'Bible',
-      category: 'Praying',
+      title: 'My name is life',
+      category: 'Biography',
     },
   ],
   filter: 'All',
