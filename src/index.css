@@ -1,4 +1,89 @@
+:root {
+  --azure: #0290ff;
+  --black-two: #121212;
+  --cool-blue: #4386bf;
+  --white: #fff;
+  --medium-blue: #307bbe;
+  --dodger-blue: #379cf6;
+  --warm-grey: #888;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap');
+
 body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* CSS reset */
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+input,
+button,
+ul,
+li,
+a,
+p {
   margin: 0;
+  border: 0;
   padding: 0;
+  text-align: inherit;
+  text-decoration: inherit;
+  color: inherit;
+  background: transparent;
+  list-style: none;
+}
+
+.panel-bg {
+  height: 95px;
+  margin: 0 0 38px;
+  padding: 23px 80px;
+  background-color: var(--white);
+}
+
+.Bookstore-CMS{
+  width: 15rem;
+  height: 2.313rem;
+  margin: 0.375rem 2.938rem 0.125rem 0;
+  font-family: Montserrat;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--azure);
+}
+
+.BOOKS {
+  width: 3.688rem;
+  margin: 1.125rem 2.563rem 0.688rem 0;
+}
+
+.CATEGORIES {
+  width: 6.563rem;
+  margin: 1.125rem 41.5rem 0.688rem 2.563rem;
+  opacity: 0.5;
+}
+
+.font {
+  font-family: Montserrat;
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+  color: var(--black-two);
+  height: 1rem;
+}
+
+.left-nav {
+  display: flex;
 }
