@@ -1,10 +1,10 @@
 const Navbar = () => (
   <header className="panel-bg">
     <nav className="navbar">
-      <ul className="left-nav">
-        <li className="nav-item"><h1 className="Bookstore-CMS">Bookstore CMS</h1></li>
-        <li className="nav-item BOOKS font">Books</li>
-        <li className="nav-item CATEGORIES font">Categories</li>
+      <ul className="left-nav flex">
+        <li className="nav-item"><h1 className="Bookstore-CMS normal">Bookstore CMS</h1></li>
+        <li className="nav-item BOOKS font normal">Books</li>
+        <li className="nav-item CATEGORIES font normal">Categories</li>
       </ul>
       <ul className="right-nav">
         <li><i className="fas fa-user Mask " /></li>
