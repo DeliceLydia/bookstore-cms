@@ -4,8 +4,8 @@ import { CircularProgressbar } from 'react-circular-progressbar';
 const Book = ({ book, handleRemoveBook }) => (
   <main className="book-panel flex">
     <div className="div-container">
-      <div className="category">{book.category}</div>
-      <div className="title normal">{book.title}</div>
+      <div className="category normal black">{book.category}</div>
+      <div className="title normal font-family black">{book.title}</div>
       <div className="author default normal font-family">Michelle</div>
       <div className="down-section">
         <button type="button" className="comment default normal font-family">Comments</button>
@@ -16,9 +16,9 @@ const Book = ({ book, handleRemoveBook }) => (
     <div className="book-update">
       <div className="progress-div">
         <CircularProgressbar value={45} text="" />
-        <div className="">
-          <p className="percentage">64%</p>
-          <p className="complete">Completed</p>
+        <div className="percent-div">
+          <p className="percentage normal black">64%</p>
+          <p className="complete black">Completed</p>
         </div>
       </div>
     </div>

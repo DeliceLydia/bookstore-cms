@@ -73,6 +73,7 @@ p {
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
+  letter-spacing: normal;
 }
 
 .font {
@@ -80,7 +81,6 @@ p {
   font-size: 0.813rem;
   font-weight: normal;
   letter-spacing: 1.9px;
-  color: var(--black-two);
   height: 1rem;
 }
 
@@ -91,13 +91,21 @@ p {
 .book-panel {
   width: 75rem;
   height: 10.625rem;
-  margin: 0 auto;
+  margin: 30px auto;
   padding: 32px 0 26px 27px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
   background-color: var(--white);
   justify-content: space-between;
   align-items: center;
+}
+
+.category {
+  width: 3.063rem;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .title {
@@ -107,7 +115,6 @@ p {
   font-size: 1.375rem;
   font-weight: bold;
   letter-spacing: -0.2px;
-  color: var(--black-two);
 }
 
 .author {
@@ -136,9 +143,38 @@ p {
 }
 
 .default {
-  font-size: 0.875rem;
+  font-size: 16px;
   font-weight: 300;
   letter-spacing: normal;
   color: #4386bf;
   height: 1.188rem;
+}
+
+.percentage {
+  width: 4.25rem;
+  height: 39px;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.complete {
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.book-update {
+  display: flex;
+  align-items: center;
+  margin-top: -6%;
+}
+
+.black {
+  color: var(--black-two);
+}
+
+.down-section {
+  margin-left: 10px;
 }

@@ -15,9 +15,7 @@ const CategoryFilter = ({ handleFilterChange }) => {
             {val}
           </option>
         ))}
-
       </select>
-
     </div>
   );
 };

@@ -15,7 +15,7 @@ const state = {
     },
     {
       id: Math.random(),
-      title: 'Eloquent-javascript',
+      title: 'Javascript',
       category: 'Learning',
     },
     {
