@@ -23,9 +23,9 @@ const Book = ({ book, handleRemoveBook }) => (
       </div>
     </div>
     <div className="line-2">
-      <div>
-        <p className="current-chapter default-current">CURRENT CHAPTER</p>
-        <p className="current-lesson default-current">CHAPTER 17</p>
+      <div className="">
+        <p className="current-chapter default-current font-family normal black">CURRENT CHAPTER</p>
+        <p className="current-lesson default-current font-family black">CHAPTER 17</p>
         <button type="button" className="update-progress">UPDATE PROGRESS</button>
       </div>
     </div>
