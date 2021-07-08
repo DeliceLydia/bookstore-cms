@@ -35,12 +35,12 @@ const BooksForm = (props) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2 className="add-new-book">ADD NEW BOOK</h2>
-      <input type="text" id="title" name="title" value={book.title} onChange={handleChange} />
-      <select name="category" id="category" onChange={handleChange}>
+      <h2 className="add-new-book normal">ADD NEW BOOK</h2>
+      <input type="text" id="title" name="title" className="input-form border height" value={book.title} onChange={handleChange} />
+      <select name="category" id="category" className="select-categorie border height" onChange={handleChange}>
         {bookCategories.map((val) => <option key={val} value={val}>{val}</option>)}
       </select>
-      <button type="submit">Add book</button>
+      <button type="submit" className="update-progress height font-family">ADD BOOK</button>
     </form>
   );
 };

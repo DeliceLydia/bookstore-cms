@@ -13,6 +13,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  background-color: var(--white);
 }
 
 /* CSS reset */
@@ -41,10 +42,12 @@ p {
 }
 
 .panel-bg {
-  height: 95px;
+  height: 35px;
   margin: -1% 0 38px;
+  margin-bottom: 100px;
   padding: 23px 80px;
   background-color: var(--white);
+  border-bottom: 1px solid #ced4da
 }
 
 .Bookstore-CMS{
@@ -116,6 +119,12 @@ p {
   border-radius: 4px;
   margin: -2% auto auto auto;
   display: block;
+  outline: none;
+}
+
+.select-field:hover,
+.input-form:hover {
+  border: 2px solid #379cf6;
 }
 
 .title {
@@ -216,4 +225,36 @@ p {
   border-radius: 3px;
   background-color: var(--azure);
   color: #fff;
+}
+
+.add-new-book {
+  width: 174px;
+  height: 24px;
+  margin: 29px 524px 19px 60px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: var(--warm-grey);
+}
+
+.border {
+  border: 1px solid #ced4da;
+}
+
+.input-form {
+  border-radius: 4px;
+  outline: none;
+  margin-left: 60px;
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+.select-categorie {
+  padding: 6px 30px 9px 16px;
+  margin-left: 30px;
+}
+
+.height {
+  height: 45px;
+  text-align: center;
 }
