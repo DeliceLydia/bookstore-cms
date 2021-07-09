@@ -37,8 +37,6 @@ Check the application live [Here](https://bookstore-cms-app.netlify.app/)
    
 * The server would usually start on port:3000
 
-* Run ``` npm test ``` to run tests
-
 ## Built with
 
 - HTML
