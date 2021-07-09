@@ -47,14 +47,14 @@ p {
   margin-bottom: 100px;
   padding: 23px 80px;
   background-color: var(--white);
-  border-bottom: 1px solid #ced4da
+  border-bottom: 1px solid #ced4da;
 }
 
 .navbar {
   align-items: center;
 }
 
-.Bookstore-CMS{
+.Bookstore-CMS {
   width: 15rem;
   height: 2.313rem;
   margin: 0.375rem 2.938rem 0.125rem 0;
@@ -126,6 +126,14 @@ p {
   outline: none;
 }
 
+.input-form {
+  border-radius: 4px;
+  outline: none;
+  margin-left: 60px;
+  margin-bottom: 40px;
+  width: 50%;
+}
+
 .select-field:hover,
 .input-form:hover {
   border: 2px solid #379cf6;
@@ -162,7 +170,7 @@ p {
 }
 
 .font-family {
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 .default {
@@ -243,14 +251,6 @@ p {
   border: 1px solid #ced4da;
 }
 
-.input-form {
-  border-radius: 4px;
-  outline: none;
-  margin-left: 60px;
-  margin-bottom: 40px;
-  width: 50%;
-}
-
 .select-categorie {
   padding: 6px 30px 9px 16px;
   margin-left: 30px;
@@ -270,5 +270,5 @@ p {
 .Mask {
   width: 1.063rem;
   height: 1.063rem;
-  color: var(--azure)
+  color: var(--azure);
 }
