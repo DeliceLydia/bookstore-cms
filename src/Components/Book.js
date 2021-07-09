@@ -7,7 +7,7 @@ const Book = ({ book, handleRemoveBook }) => (
     <div className="div-container">
       <div className="category normal black">{book.category}</div>
       <div className="title normal font-family black">{book.title}</div>
-      <div className="author default normal font-family">Michelle</div>
+      <div className="author default normal font-family">Chimamanda</div>
       <div className="down-section">
         <button type="button" className="comment default normal font-family">Comments</button>
         <button onClick={() => handleRemoveBook(book)} type="submit" className="remove default normal font-family">Remove</button>
