@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 const Book = ({ book, handleRemoveBook }) => (
   <main className="book-panel flex">

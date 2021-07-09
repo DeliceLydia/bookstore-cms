@@ -185,7 +185,10 @@ p {
 .book-update {
   display: flex;
   align-items: center;
-  margin-top: -6%;
+}
+
+.progress-div {
+  display: flex;
 }
 
 .black {
@@ -257,4 +260,10 @@ p {
 .height {
   height: 45px;
   text-align: center;
+}
+
+.CircularProgressbar {
+  width: 3.25rem;
+  height: 4.25rem;
+  padding-right: 10px;
 }
