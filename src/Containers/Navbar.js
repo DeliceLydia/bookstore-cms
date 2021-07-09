@@ -11,7 +11,7 @@ const Navbar = () => (
         <li className="nav-item CATEGORIES font normal black">Categories</li>
       </ul>
       <ul className="right-nav">
-        <li><FontAwesomeIcon icon={faUser} /></li>
+        <li className="Mask"><FontAwesomeIcon icon={faUser} /></li>
       </ul>
     </nav>
   </header>

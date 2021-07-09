@@ -266,3 +266,9 @@ p {
   height: 4.25rem;
   padding-right: 10px;
 }
+
+.Mask {
+  width: 1.063rem;
+  height: 1.063rem;
+  color: var(--azure)
+}
