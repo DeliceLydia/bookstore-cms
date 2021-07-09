@@ -50,6 +50,10 @@ p {
   border-bottom: 1px solid #ced4da
 }
 
+.navbar {
+  align-items: center;
+}
+
 .Bookstore-CMS{
   width: 15rem;
   height: 2.313rem;
@@ -183,12 +187,7 @@ p {
 }
 
 .book-update {
-  display: flex;
   align-items: center;
-}
-
-.progress-div {
-  display: flex;
 }
 
 .black {

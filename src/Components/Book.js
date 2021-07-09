@@ -14,8 +14,8 @@ const Book = ({ book, handleRemoveBook }) => (
         <button type="button" className="edit default normal font-family">Edit</button>
       </div>
     </div>
-    <div className="book-update">
-      <div className="progress-div">
+    <div className="book-update flex">
+      <div className="progress-div flex">
         <CircularProgressbar value={45} text="" />
         <div className="percent-div">
           <p className="percentage normal black">64%</p>
