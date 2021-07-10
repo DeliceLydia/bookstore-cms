@@ -113,7 +113,7 @@ p {
 }
 
 .select-field {
-  width: 77rem;
+  width: 20rem;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
@@ -121,7 +121,7 @@ p {
   color: #495057;
   border: 1px solid #ced4da;
   border-radius: 4px;
-  margin: -2% auto auto auto;
+  margin: -2% auto auto 60px;
   display: block;
   outline: none;
 }
@@ -174,7 +174,7 @@ p {
 }
 
 .default {
-  font-size: 16px;
+  font-size: 0.875rem;
   font-weight: 300;
   letter-spacing: normal;
   color: #4386bf;
