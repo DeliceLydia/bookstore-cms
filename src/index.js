@@ -3,23 +3,23 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import App from './Components/App';
-import combineReducers from './Reducers/index';
+import reducer from './Reducers';
 import './index.css';
 
 const state = {
   books: [
     {
-      id: Math.random(),
+      id: Math.floor(Math.random() * 10000),
       title: 'Americanah',
       category: 'History',
     },
     {
-      id: Math.random(),
+      id: Math.floor(Math.random() * 10000),
       title: 'Javascript',
       category: 'Learning',
     },
     {
-      id: Math.random(),
+      id: Math.floor(Math.random() * 10000),
       title: 'My name is life',
       category: 'Biography',
     },
@@ -27,7 +27,7 @@ const state = {
   filter: 'All',
 };
 
-const store = createStore(combineReducers, state);
+const store = createStore(reducer, state);
 
 ReactDOM.render(
   <React.StrictMode>

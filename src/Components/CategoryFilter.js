@@ -10,9 +10,9 @@ const CategoryFilter = ({ handleFilterChange }) => {
   return (
     <div className="container">
       <select className="select-field" id="category" name="category" onChange={handleChange}>
-        {categories.map((val) => (
-          <option key={val} value={val}>
-            {val}
+        {categories.map((category, index) => (
+          <option value={category} key={String(index)}>
+            {category}
           </option>
         ))}
       </select>
