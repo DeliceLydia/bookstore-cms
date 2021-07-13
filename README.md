@@ -1,5 +1,7 @@
 # Bookstore-CMS
-This is a fast, dynamic and responsive application which is about organizing and manage bookstore that is designed using React &amp; Redux.
+This is a fast, dynamic and responsive application that I designed using React&Redux, it will help a company to organize and manage their bookstore.
+
+![screenshot](./shot.PNG)
 
 ## Live Demo
 
@@ -35,8 +37,6 @@ Check the application live [Here](https://bookstore-cms-app.netlify.app/)
    
 * The server would usually start on port:3000
 
-* Run ``` npm test ``` to run tests
-
 ## Built with
 
 - HTML
@@ -62,7 +62,7 @@ Check the application live [Here](https://bookstore-cms-app.netlify.app/)
 
 ## Acknowledgments
 
-Credits goes to [Facebook Developers](https://github.com/facebook/create-react-app) for designing Create-React-App that makes our life easier.
+Credits goes to [Facebook Developers](https://github.com/facebook/create-react-app) for designing Create-React-App that helps along the way.
 
 ## Show your support
 

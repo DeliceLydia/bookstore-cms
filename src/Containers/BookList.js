@@ -15,43 +15,20 @@ const BooksList = ({
     changeFilter(filter);
   };
 
-  const renderBooks = (array) => (array.map((val) => (
-    <Book handleRemoveBook={handleRemoveBook} key={val.id} book={val} />
-  )));
-
-  const renderFilter = () => {
-    if (filter === 'All') {
-      return (
-        renderBooks(books)
-      );
-    }
-
-    return (
-      renderBooks(books.filter((book) => book.category === filter))
-    );
-  };
-
   return (
     <>
       <CategoryFilter handleFilterChange={handleFilterChange} />
       <div className="container-filter">
-        {
-          books && books.length
-            ? renderFilter()
-            : (
-              <p>No books!</p>
-            )
-
-        }
+        {(filter === 'All' ? books : books.filter((book) => book.category === filter))
+          .map((book) => (
+            <Book book={book} key={book.id} removeBook={handleRemoveBook} />
+          ))}
       </div>
     </>
   );
 };
 
-const mapStateToProps = (state) => {
-  const { books, filter } = state;
-  return { books, filter };
-};
+const mapStateToProps = (state) => ({ books: state.books, filter: state.filter });
 
 const mapDispatchToProps = (dispatch) => ({
   removeBook: (book) => {

@@ -1,4 +1,274 @@
+:root {
+  --azure: #0290ff;
+  --black-two: #121212;
+  --cool-blue: #4386bf;
+  --white: #fff;
+  --medium-blue: #307bbe;
+  --dodger-blue: #379cf6;
+  --warm-grey: #888;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab&display=swap');
+
 body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--white);
+}
+
+/* CSS reset */
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+input,
+button,
+ul,
+li,
+a,
+p {
   margin: 0;
+  border: 0;
   padding: 0;
+  text-align: inherit;
+  text-decoration: inherit;
+  color: inherit;
+  background: transparent;
+  list-style: none;
+}
+
+.panel-bg {
+  height: 35px;
+  margin: -1% 0 38px;
+  margin-bottom: 100px;
+  padding: 23px 80px;
+  background-color: var(--white);
+  border-bottom: 1px solid #ced4da;
+}
+
+.navbar {
+  align-items: center;
+}
+
+.Bookstore-CMS {
+  width: 15rem;
+  height: 2.313rem;
+  margin: 0.375rem 2.938rem 0.125rem 0;
+  font-size: 1.875rem;
+  font-weight: bold;
+  letter-spacing: normal;
+  color: var(--azure);
+}
+
+.BOOKS {
+  width: 3.688rem;
+  margin: 1.125rem 2.563rem 0.688rem 0;
+}
+
+.CATEGORIES {
+  width: 6.563rem;
+  margin: 1.125rem 41.5rem 0.688rem 2.563rem;
+  opacity: 0.5;
+}
+
+.normal {
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.font {
+  font-size: 0.813rem;
+  font-weight: normal;
+  letter-spacing: 1.9px;
+  height: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.book-panel {
+  width: 75rem;
+  height: 10.625rem;
+  margin: 30px auto;
+  padding: 32px 0 26px 27px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: var(--white);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category {
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: 400;
+  color: #495057;
+}
+
+.select-field {
+  width: 20rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  margin: -2% auto auto 60px;
+  display: block;
+  outline: none;
+}
+
+.input-form {
+  border-radius: 4px;
+  outline: none;
+  margin-left: 60px;
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+.select-field:hover,
+.input-form:hover {
+  border: 2px solid #379cf6;
+}
+
+.title {
+  width: 12.313rem;
+  height: 1.813rem;
+  margin: 0.188rem 20.188rem 0 0;
+  font-size: 1.375rem;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+}
+
+.author {
+  width: 6.688rem;
+  height: 1.188rem;
+  margin: 0.25rem 0 0;
+}
+
+.comment {
+  width: 4.563rem;
+  margin: 0.188rem 0.938rem 0.125rem 0;
+}
+
+.remove {
+  width: 3.375rem;
+  margin: 0.188rem 0.938rem 0.125rem 0;
+}
+
+.edit {
+  width: 1.688rem;
+  margin: 0.188rem 18.625rem 0.125rem 1.063rem;
+}
+
+.font-family {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.default {
+  font-size: 0.875rem;
+  font-weight: 300;
+  letter-spacing: normal;
+  color: #4386bf;
+  height: 1.188rem;
+}
+
+.percentage {
+  width: 4.25rem;
+  height: 39px;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.complete {
+  opacity: 0.5;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.book-update {
+  align-items: center;
+}
+
+.black {
+  color: var(--black-two);
+}
+
+.down-section {
+  margin-top: 10px;
+}
+
+.line-2 {
+  height: 4.375rem;
+  margin: 18px 150px 0 79px;
+  border-left: solid 2px #e8e8e8;
+  padding-left: 20px;
+}
+
+.current-chapter {
+  height: 1.125rem;
+  margin: 0.063rem 3.625rem 0 3.688rem;
+  opacity: 0.5;
+}
+
+.current-lesson {
+  height: 1.313rem;
+  margin: 0.438rem 6.813rem 0.25rem 3.688rem;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+}
+
+.update-progress {
+  width: 11.5rem;
+  height: 2.063rem;
+  margin: 0.75rem 0 0.563rem 3.688rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  background-color: var(--azure);
+  color: #fff;
+}
+
+.add-new-book {
+  width: 174px;
+  height: 24px;
+  margin: 29px 524px 19px 60px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: var(--warm-grey);
+}
+
+.border {
+  border: 1px solid #ced4da;
+}
+
+.select-categorie {
+  padding: 6px 30px 9px 16px;
+  margin-left: 30px;
+}
+
+.height {
+  height: 45px;
+  text-align: center;
+}
+
+.CircularProgressbar {
+  width: 3.25rem;
+  height: 4.25rem;
+  padding-right: 10px;
+}
+
+.Mask {
+  width: 1.063rem;
+  height: 1.063rem;
+  color: var(--azure);
 }

@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
 import bookReducer from './books';
-import filter from './filter';
+import filterReducer from './filter';
 
-export default combineReducers({
+const reducer = combineReducers({
   books: bookReducer,
-  filter,
+  filter: filterReducer,
 });
+
+export default reducer;
